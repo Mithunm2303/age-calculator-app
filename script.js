@@ -28,7 +28,7 @@ input_day.addEventListener('input', e =>{
   }
   if(+input_day.value === 0){
     isValid = false;
-    err_day.textContent = 'this fiel is required';
+    err_day.textContent = 'this field is required';
     document.getElementById('error-span-day').style.color = 'red';
     document.getElementById('day').style.border = '2px solid red';
     return;
@@ -53,7 +53,7 @@ input_month.addEventListener('input', e =>{
   }
   if(+input_month.value === 0){
     isValid = false;
-    err_month.textContent = 'this fiel is required';
+    err_month.textContent = 'this field is required';
     document.getElementById('error-span-month').style.color = 'red';
     document.getElementById('month').style.border = '2px solid red';
     return;
@@ -78,7 +78,7 @@ input_year.addEventListener('input', e =>{
   }
   if(+input_year.value === 0){
     isValid = false;
-    err_year.textContent = 'this fiel is required';
+    err_year.textContent = 'this field is required';
     document.getElementById('error-span-year').style.color = 'red';
     document.getElementById('year').style.border = '2px solid red';
     return;
