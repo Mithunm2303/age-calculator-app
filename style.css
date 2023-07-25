@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+:root {
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Lightgrey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+body {
+  background-color: var(--Off-white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: var(--White);
+  padding: 30px;
+  width: 450px;
+  max-width: 80%;
+  margin-bottom: 1.5rem;
+  position: relative;
+  border-radius: 20px;
+  border-bottom-right-radius: 150px;
+  border: none;
+  box-shadow: -5px 5px 5px rgba(128, 128, 128, 0.615);
+
+}
+
+input {
+  width: 70px;
+  padding: .625rem;
+  border-radius: 5px;
+  border: 2px solid var(--Off-white);
+  outline: none;
+  margin-bottom: .3rem;
+}
+
+input:focus {
+  border: 2px solid var(--Purple);
+}
+
+small {
+  color: var(--Light-red);
+  /* font-weight: bold; */
+  font-size: .625rem;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+.submit-btn {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--Purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  position: absolute;
+  right: 30px;
+  top: 110px;
+  cursor: pointer;
+}
+
+.submit-btn img {
+  height: 30px;
+}
+
+.submit-btn:hover {
+  background-color: var(--Off-black);
+}
+
+.output span {
+  color: var(--Purple);
+  font-size: 2.6rem;
+  font-weight: bolder;
+  font-style: italic;
+  padding: 10px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-container span {
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: bold;
+  color: var(--Smokey-grey);
+}
+
+#span {
+  margin-left: 20px;
+}
+
+
+.input-flex {
+  display: flex;
+  border-bottom: 2px solid var(--Off-white);
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 30px;
+  }
+  .container {
+    width: 80%;
+  }
+  input {
+    width: 80%;
+  }
+  .output {
+   padding: 1rem; 
+  }
+  .output span {
+    font-size: 1.57rem;
+  }
+  .output h1 {
+    font-weight: bold;
+  }
+  
+  .submit-btn {
+    /* position:sticky; */
+    right: 40%;
+    top: 120px;
+    width: 45px;
+    height: 45px;
+  }
+
+  small {
+    font-size: .450rem;
+  }
+}
